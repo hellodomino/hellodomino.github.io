@@ -171,7 +171,7 @@
             <div class="video-presentation">
                 <!-- <iframe src="//player.vimeo.com/video/86235432?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="500" height="281" allowfullscreen>
                 </iframe> -->
-                <iframe width="800" height="410" src="http://www.youtube.com/embed/DC0Y3u-yujA?autoplay=0" frameborder="0" allowfullscreen>
+                <iframe class="myvideo" width="600" height="330" src="http://www.youtube.com/embed/DC0Y3u-yujA?autoplay=0" frameborder="1" allowfullscreen>
                 </iframe>
             </div>
 					</div>
@@ -822,36 +822,39 @@
 						<div class="col-sm-4 wow fadeInLeft" data-wow-delay="0.3s">
 							<div class="contact_icon">
 								<i class="fa fa-mobile"></i>
-								<p>123-456-7890</p>
+								<p>+237 650 021 839  -  +237 697 628 366</p>
 							</div>
 						</div>
 						<div class="col-sm-4 wow fadeInUp" data-wow-delay="0.3s">
 							<div class="contact_icon">
 								<i class="fa fa-map-marker"></i>
-								<p>VICTORIA, UNITED STATES</p>
+								<p>YAOUNDER, CAMEROON</p>
 							</div>
 						</div>
 						<div class="col-sm-4 wow fadeInRight" data-wow-delay="0.3s">
 							<div class="contact_icon">
 								<i class="fa fa-envelope-o"></i>
-								<p>NO-REPLY@DOMAIN.COM</p>
+								<p>hello.domino237@gmail.com</p>
 							</div>
 						</div>
 					</div>
 					<hr class="margin_eight" />
-					<div class="col-sm-6">
-						<input type="text" placeholder="Your Name" name="name">
-						<input type="text" placeholder="Your Email" name="email">
-                    </div>
-					<div class="col-sm-6">
-						<div class="message_text">
-							<textarea name="message" rows="3" cols="40" placeholder="Message" required="required"></textarea>
-						</div>
-					</div>
-					<div class="col-md-12 col-sm-12">
-						<span class="required">*Please complete all fields correctly</span>
-						<input type="button" class="btn-black " value="send message" name="send message" id="contact-button">
-					</div>
+
+          <form action="https://formspree.io/hello.domino237@gmail.com"
+           method="post" id="contact-form">
+             <input type="text" placeholder="Nom" name="Name" id="Name" required>
+             <input type="email" placeholder="Email" name="_replyto" id="Email" required>
+             <input type="text" placeholder="Tel" name="Phone" id="Phone">
+             <input type="text" placeholder="Sujet" name="Subject" id="Subject" required>
+             <textarea placeholder="Message" name="Message" id="Message" ></textarea>
+              <input type="submit" id="submit" value="Send">
+              <input type="hidden" name="_next" value="http://hellodomino.github.io" />
+              <input type="hidden" name="_cc" value="voukengchristian@gmail.com" />
+              <input type="text" name="_gotcha" style="display:none" />
+             <div id="success"></div>
+         </form>
+
+
 				</div>
 			</div>
 		</div>
@@ -907,7 +910,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="footer_copyright">
-					<p>&copy;2015 RAKIB IS PROUDLY POWERED BY <a href="http://devitems.com/author/rakib9382/">RAKIB</a>.</p>
+					<p>&copy;2016 DOMINO CAMEROON  .</p>
 					<a href="index.html#"><img src="images/logo.png" alt="" /></a>
 				</div>
 			</div>
@@ -937,5 +940,13 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- main js -->
     <script src="js/main.js"></script>
+
+    <style>
+    .myvideo iframe {
+      width: 658px !important;
+      display: block !important;
+    }
+   </style>
+
   </body>
 </html>
